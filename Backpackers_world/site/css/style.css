@@ -1,1 +1,21 @@
-@media only sceeen and (max-device-width: )
+@media only screen and (max-device-width: 455px) {
+    body {
+        background-color: black;
+        width: 455px;
+        height: 782px;
+        margin: 0px;
+    }
+    div.wrapper {
+        display: grid;
+        width: inherit;
+        height: inherit;
+        grid-template-rows: repeat(10, 1fr);
+        grid-row-gap: 0px;
+    }
+    header {
+        grid-row: span 1;
+        background-color: white;
+    }
+
+
+}
