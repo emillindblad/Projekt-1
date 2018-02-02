@@ -25,18 +25,20 @@
         grid-template-rows: repeat(7,1fr);
         grid-template-columns: repeat(7,65px);
     }
+
     div.test1 {
         grid-row: 6/7;
         grid-column: 2/4;
         border: solid 2px black;
         border-radius: 10px;
         text-align: center;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 10px;
-        
-
-        
+        color: black;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 500;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
 
     div.test2 {
@@ -45,9 +47,19 @@
         border: solid 2px black;
         border-radius: 10px;
         text-align: center;
-        color: white;
-        font-family: 'Roboto', sans-serif;
+        color: black;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 500;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
+    header nav h2{
+        font-family: 'Roboto';
+        font-weight: 500;
+    }
+
     nav {
        
         display: grid;
@@ -62,15 +74,15 @@
         color: rgba(0, 0, 0, 0.54);
         grid-row: 2/3;
         grid-column: 2/3;
+        display:flex;
+        justify-content:center;
+        align-items:center;
         
     }
     
-    }
+    
     .navlogo {
         grid-row: 2/3;
         grid-column: 3/4;
     }
-
-        
-
 }
