@@ -15,7 +15,6 @@
         grid-row: span 1;
         background-color: #4dd0e1;
         display: grid;
-
     }
     
     main {
@@ -30,10 +29,10 @@
     div.test1 {
         grid-row: 6/7;
         grid-column: 2/4;
-        border: solid 2px black;
+        border: solid 2px #212121;
         border-radius: 10px;
         text-align: center;
-        color: black;
+        color: #212121;
         font-family: 'Roboto';
         font-size: 24px;
         font-weight: 500;
@@ -45,10 +44,10 @@
     div.test2 {
         grid-row: 6/7;
         grid-column: 5/7;
-        border: solid 2px black;
+        border: solid 2px #212121;
         border-radius: 10px;
         text-align: center;
-        color: black;
+        color: #212121;
         font-family: 'Roboto';
         font-size: 16px;
         font-weight: 500;
@@ -69,9 +68,19 @@
         grid-column-gap: 12px;
     }
 
-    nav i.material-icons {
+    nav div.menu {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        
+        
+        
+    }
+    
+    nav div.menu i.material-icons {
         font-size: 48px;
-        text-justify: middle;
         color: rgba(0, 0, 0, 0.54);
         grid-row: 2/3;
         grid-column: 2/3;
@@ -81,13 +90,13 @@
         
     }
     
-    
     .navlogo {
         grid-row: 2/3;
         grid-column: 3/4;
     }
 }
 
+/* Ignore */
 ignore{
     display: none;
     color: #4dd0e1;
