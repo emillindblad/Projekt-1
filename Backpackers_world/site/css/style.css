@@ -68,7 +68,7 @@
         grid-column-gap: 12px;
     }
 
-    nav div.menu {
+    nav div.menuicon {
         grid-row: 2/3;
         grid-column: 2/3;
         display:flex;
@@ -79,7 +79,7 @@
         
     }
     
-    nav div.menu i.material-icons {
+    nav div.menuicon i.material-icons {
         font-size: 48px;
         color: rgba(0, 0, 0, 0.54);
         grid-row: 2/3;
@@ -93,6 +93,34 @@
     .navlogo {
         grid-row: 2/3;
         grid-column: 3/4;
+    }
+
+    .menu {
+        transform: translateX(-100%);
+        transition: transform 1s;
+        position: absolute;
+        height: 100vh;
+        width: 70vw;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 0px 48px auto;
+        grid-template-rows: 12px 56px 12px auto;
+        grid-column-gap: 12px;
+
+    }
+
+    .show {
+        transform: translateX(0);
+    }
+    
+    div.menu i.material-icons {
+        font-size: 48px;
+        color: rgba(0, 0, 0, 0.54);
+        grid-row: 2/3;
+        grid-column: 2/3;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
 }
 
