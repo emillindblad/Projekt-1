@@ -14,7 +14,7 @@
     header {
         grid-row: span 1;
         background-color: #4dd0e1;
-        display: grid;
+        
     }
     
     main {
@@ -26,13 +26,13 @@
         grid-template-columns: repeat(7,65px);
     }
 
-    div.test1 {
+    div.mainbtn1 {
         grid-row: 6/7;
         grid-column: 2/4;
         border: solid 2px #212121;
         border-radius: 10px;
-        text-align: center;
         color: #212121;
+        text-align: center;
         font-family: 'Roboto';
         font-size: 24px;
         font-weight: 500;
@@ -41,12 +41,11 @@
         align-items:center;
     }
 
-    div.test2 {
+    div.mainbtn2 {
         grid-row: 6/7;
         grid-column: 5/7;
         border: solid 2px #212121;
         border-radius: 10px;
-        text-align: center;
         color: #212121;
         font-family: 'Roboto';
         font-size: 16px;
@@ -73,10 +72,7 @@
         grid-column: 2/3;
         display:flex;
         justify-content:center;
-        align-items:center;
-        
-        
-        
+        align-items:center; 
     }
     
     nav div.menuicon i.material-icons {
@@ -101,12 +97,18 @@
         position: absolute;
         height: 100vh;
         width: 70vw;
-        background-color: rgb(77 208 225);
+        background-color: rgba(245, 245, 245, 1);
         display: grid;
-        grid-template-columns: 0px 48px auto;
-        grid-template-rows: 12px 56px 12px auto;
-        grid-column-gap: 12px;
+        grid-template-rows: repeat(6,80px);
+        grid-template-columns: 100%;
+        /* grid-template-columns: 0px 48px auto;
+        grid-template-rows: 0px 56px repeat(4,56px);
+        grid-row-gap: 12px;
+        grid-column-gap: 12px;  */
         z-index: 99;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 20px;
 
     }
 
@@ -114,14 +116,57 @@
         transform: translateX(0);
     }
     
-    div.menu i.material-icons {
-        font-size: 48px;
-        color: rgba(0, 0, 0, 0.54);
+    div.menu div.hambugerclosebutton {
+        grid-row: span 3;
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 0px 48px auto 48px 0px;
+        grid-template-rows: 0px 56px;
+        grid-row-gap: 12px;
+        grid-column-gap: 12px;
+        background-color: #4dd0e1;
+    }
+
+    div.menu div.hambugerclosebutton i:first-of-type {
         grid-row: 2/3;
         grid-column: 2/3;
+        font-size: 48px;
+        color: rgba(0, 0, 0, 0.54);
+        display:flex;
+        justify-content:center;
+        align-items:center;        
+    }
+    
+    div.menu div.hambugerclosebutton a.homebutton {
+        grid-row: 2/3;
+        grid-column: 4/4;
+        font-size: 36px;
+        color: rgba(0, 0, 0, 0.54);
         display:flex;
         justify-content:center;
         align-items:center;
+        text-decoration: none;
+    }
+    .button1 {
+        color: rgba(72, 72, 72, 1);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        grid-row: 4;
+    }
+    .button2 {
+        color: rgba(72, 72, 72, 1);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        grid-row: 5;
+    }
+    .button3 {
+        color: rgba(72, 72, 72, 1);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        grid-row: 6;
     }
 
     /* .gray {
@@ -136,6 +181,18 @@
     .fade {
         display: block;
     } */
+    main.browse p {
+        color: #212121;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 500;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        grid-row: 4/5;
+        grid-column: 4/5;
+    }
 }
 
 /* Ignore */
