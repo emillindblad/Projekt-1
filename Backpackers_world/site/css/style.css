@@ -181,7 +181,7 @@
     .fade {
         display: block;
     } */
-    main.browse p {
+    main p {
         color: #212121;
         text-align: center;
         font-family: 'Roboto';
@@ -195,12 +195,4 @@
     }
 }
 
-/* Ignore */
-ignore{
-    display: none;
-    color: #4dd0e1;
-    color: #88ffff;
-    color: #212121;
-    color: #484848;
-}
-    
+
